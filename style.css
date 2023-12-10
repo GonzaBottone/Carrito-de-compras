@@ -1,4 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
 
+* {
+    font-family: 'Kanit', sans-serif;
+    box-sizing: border-box;
+}
+
+.titulo {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    background-color: rgb(6, 30, 248);
+    color: #fff;
+    font-size: 40px;
+    border-radius: 10px;
+}
 header{
     padding-top: 18px;
     padding-bottom: 18px;
@@ -29,7 +43,7 @@ header{
     background-color: #ffffff;
     padding: 1px 6px;
     border-radius: 50%;
-    color: rgb(6, 248, 18);
+    color: rgb(6, 30, 248);
     font-weight: 700;
     font-family: system-ui;
     line-height: 18px;
@@ -67,9 +81,19 @@ header{
     max-width: 250px;
     padding-bottom: 34px;
     margin-bottom: 40px;
+    background-color: #494949;
+    border-radius: 20px;
+    transition: transform .3s;
 }
+
+.carts:hover {
+    transform: scale(1.1);
+}
+
 .carts img{
     width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .carts p{
     font-family: system-ui;
@@ -83,13 +107,12 @@ header{
 }
 .carts a{
     text-decoration: none;
-    background: rgb(6, 182, 6);
+    background: rgb(6, 30, 248);
     padding: 9px 23px;
     color: #fff;
     font-size: 17px;
     font-weight: 700;
 }
-
 
 .cart-products .item img{
     width: 115px;
@@ -144,4 +167,13 @@ p.author a {
     text-decoration: none;
     font-weight: 700;
     color: #cc1f1f;
+}
+
+.title {
+    color: #ffffff;
+}
+
+.parrafo-producto {
+    color: #fff;
+    font-size: 25px;
 }

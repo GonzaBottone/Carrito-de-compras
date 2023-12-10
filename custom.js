@@ -1,4 +1,10 @@
-
+Swal.fire({
+    title: 'Hola!',
+    text: 'En esta tienda vas a poder añadir todos los productos que selecciones a tu carrito',
+    icon: 'info',
+    confirmButtonText: 'Aceptar'
+  })
+ 
 let allContainerCart = document.querySelector('.products');
 let containerBuyCart = document.querySelector('.card-items');
 let priceTotal = document.querySelector('.price-total')
@@ -18,6 +24,20 @@ function loadEventListenrs(){
 }
 
 function addProduct(e){
+    Toastify({
+        text: "Añadido al carrito",
+        duration: 2000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "linear-gradient(to right, #000000, #000000)",
+        },
+        onClick: function(){}
+      }).showToast();
     e.preventDefault();
     if (e.target.classList.contains('btn-add-cart')) {
         const selectProduct = e.target.parentElement; 

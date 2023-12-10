@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de proteina</title>
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./style.css">
     
 </head>
 <body>
     <header>
+        <h1 class="titulo">CARRITO DE COMPRAS</h1>
         <div class="header-section container">
             <div>
                 <img onclick="showCart(this)" class="cart" src="./images/107831.png" alt="">
@@ -29,34 +31,66 @@
         <div class="products">
             <div class="carts">
                 <div>
-                    <img src=".//images/products/whey-protein-star.jpg" alt="">
-                    <p><span>40</span>USD</p>
+                    <img src="./images/products/star-nutrition-mutant-mass-frutilla.jpg" alt="">
+                    <p class="parrafo-producto"><span>40</span>USD</p>
                 </div>
                 <p class="title">STAR NUTRITION PLATINUM WHEY PROTEIN</p>
                 <a href="" data-id="1" class="btn-add-cart">add to cart</a>
             </div>
             <div class="carts">
                 <div>
-                    <img src=".//images/products/proteina.jpg" alt="">
-                    <p><span>35</span>USD</p>
+                    <img src="./images/products/proteina.jpg" alt="">
+                    <p class="parrafo-producto"><span>35</span>USD</p>
                 </div>
                 <p class="title">XBODY Whey Protein Frutilla (907 gr.) (26 sv.)</p>
                 <a href="" class="btn-add-cart" data-id="2">add to cart</a>
             </div>
             <div class="carts">
                 <div>
-                    <img src="./images/products/proteina-ena.png" alt="">
-                    <p><span>35.50</span>USD</p>
+                    <img src="./images/products/whey-protein-star.jpg">
+                    <p class="parrafo-producto"><span>35.50</span>USD</p>
                 </div>
-                <p class="title">Ena Whey Protein True Made</p>
+                <p class="title">ENA WHEY PROTEIN NUTRITION STAR</p>
                 <a href="" data-id="3" class="btn-add-cart">add to cart</a>
             </div>
             <div class="carts">
                 <div>
                     <img src="./images/products/one-fit-creatina-micronizada.jpg" alt="">
-                    <p><span>20.20</span>USD</p>
+                    <p class="parrafo-producto"><span>20.20</span>USD</p>
                 </div>
                 <p class="title">Creatina Poweraded Creatine Micronized 200 Grs Pura 200 Grs</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/ena-super-ultra-mass-3000.jpg" alt="">
+                    <p class="parrafo-producto"><span>50.20</span>USD</p>
+                </div>
+                <p class="title">ULTRA MASS ENA PROTEIN PROMO PACK</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/ena-creatina-micronizada-neutra-300.jpg" alt="">
+                    <p class="parrafo-producto"><span>20.20</span>USD</p>
+                </div>
+                <p class="title">CREATINA MICRONIZED ENA</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/star-nutrition-creatine-monohydrate.jpg" alt="">
+                    <p class="parrafo-producto"><span>35.20</span>USD</p>
+                </div>
+                <p class="title">STAR NUTRITION creatine monohydrate</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/ena-whey-protein-true-made-coockies.jpg" alt="">
+                    <p class="parrafo-producto"><span>40.20</span>USD</p>
+                </div>
+                <p class="title">ENA WHEY PROTEIN true made coockies</p>
                 <a href="" data-id="4" class="btn-add-cart">add to cart</a>
             </div>
         </div>
@@ -71,6 +105,8 @@
         }
 
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./custom.js" ></script>
 </body>
 </html>
